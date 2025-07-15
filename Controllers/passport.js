@@ -3,8 +3,8 @@ import GoogleStrategy from 'passport-google-oauth20';
 import Host from '../models/Host.js';
  
 passport.use(new GoogleStrategy({
-  clientID: "", // Ensure this is defined in .env
-  clientSecret: "", // Ensure this is defined in .env
+  clientID: "951178339713-u813sl2r7vhnr6qh19a20c5qdkfm7k19.apps.googleusercontent.com", // Ensure this is defined in .env
+  clientSecret: "3fSH6JJSayay1ud9qhPswwGiKf8J", // Ensure this is defined in .env
   callbackURL: "https://backend-1-yfnm.onrender.com/api/auth/google/callback"
 },
 
