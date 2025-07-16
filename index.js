@@ -7,7 +7,7 @@ import passport from './Controllers/passport.js';
 import session from 'express-session'; 
 import authRoutes from './Routes/auth.js'; 
 import userRoutes from "./Routes/user.js";
-import HostRoutes from './Routes/hostRoutes.js';
+
 import bodyParser from 'body-parser';
 import taskRoutes from "./Routes/taskRoutes.js"; // Make sure .js is added if you're using ES modules
 
@@ -59,7 +59,7 @@ app.get('/', (req, res) => {
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
-app.use('/api/hosts', HostRoutes);
+
 app.use('/api', taskRoutes);
 
 // Start the server
